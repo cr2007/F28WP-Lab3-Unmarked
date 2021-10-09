@@ -2,6 +2,7 @@
 #uhead {
     background-color: #580c0c;
     width: 100%;
+    display: flex;
 }
 
 /* -------- Formatting the Avatar -------- */
@@ -23,12 +24,13 @@
 /* -------- Menu Formatting -------- */
 .menu {
     background-color: #333;
+    overflow: hidden;
 }
 
 /* ---- Heading within Menu ---- */
 .menu h1 {
     text-align: center;
-    color: #FFFFFF;
+    color: #726c6c;
 }
 
 
@@ -37,6 +39,13 @@
 /* -------- Overall Container -------- */
 #container {
     margin: 0 auto;
+    position: relative;
+}
+
+#content {
+    margin-left: 160px;
+    float: left;
+    overflow: hidden;
 }
 
 /* -------- Presentation with profile and photo -------- */
@@ -44,16 +53,21 @@
     background-color: #FF7F50;
     width: 100%;
     border: 1px solid black;
+    overflow: hidden;
 }
 
 /* -------- Profile Div -------- */
 #profile {
     width: 80%;
+    float: left;
+    overflow: auto;
+    display: block;
 }
 
 /* -------- Photo Image Size -------- */
 #photo {
     width: 10%;
+    display: block;
 }
 
 /* -------- Article -------- */
@@ -62,7 +76,7 @@ article {
     border: 2px solid black;
     background-color: #FFF0F5;
     height: auto;
-    /* float: left; */
+    float: left;
 }
 
 /* -------- A Rule for emphasising names in the article -------- */
@@ -71,7 +85,7 @@ article {
 }
 
 /* -------- Sidebar -------- */
-#ide {
+#side {
     z-index: 1;
     top: 0;
     left: 0;
@@ -79,6 +93,9 @@ article {
     color: white;
     margin-right: 50px;
     margin-top: 20px;
+    width: 160px;
+    overflow-x: hidden;
+    position: absolute;
 }
 
 /* -------- Relative Size of the Chess icon -------- */
@@ -94,6 +111,7 @@ footer {
     background-color: rgb(54, 50, 50);
     color: white;
     text-align: center;
+    position: fixed;
 }
 
 /* -------- Make footer white to avoid the standard blue color of the links -------- */
