@@ -33,6 +33,28 @@
     color: #726c6c;
 }
 
+/* ---- Links within the Menu ---- */
+.menu a {
+    float: left;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* ---- Links within the menu (when Hovered) ---- */
+.menu a:hover {
+    background-color: #DDD;
+    color: black;
+}
+
+/* ---- the Active/First link ---- */
+.menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 
 /* ---------------- Content Formatting ---------------- */
 
